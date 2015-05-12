@@ -1,0 +1,21 @@
+[2015-05-04 08:53:31,357]  WARN [main] (MonitorAgent.java:49) - hwm.common.monitor.SqlMonitorItem@ffc3eb[
+  type=SQL
+  service=select t.*,decode(t.C_KEYVALUE,'#',1,2) ind from TDICTIONARY t order by t.L_KEYNO,ind,t.C_KEYVALUE
+  context={}
+  consumeMillsec=1161
+  error=<null>
+]
+[2015-05-04 08:53:37,473]  WARN [main] (MonitorAgent.java:49) - hwm.common.monitor.TuxedoMonitorItem@9e4c6b[
+  type=TUXEDO
+  service=HS_TRANSACTION
+  context=0528886     007     888600000222                 ed45d513a9666131403359d23aa2d245                  VER330                                  270009A300000000000050000000000000000000                             10000                                                                                  K                               00000                                                
+  consumeMillsec=3177
+  error=<null>
+]
+[2015-05-04 14:56:05,659]  WARN [main] (MonitorAgent.java:49) - hwm.common.monitor.SqlMonitorItem@13849df[
+  type=SQL
+  service=SELECT a.*,b.vc_fieldname,b.c_fieldtype,b.vc_explain FROM TCOMFORMAT a,TCOMDICT b where  b.L_IDNO = a.L_IDNO order by a.vc_servicename,a.c_functionno,a.VC_VERSION,a.C_FLAG,a.L_NO 
+  context={}
+  consumeMillsec=1035
+  error=<null>
+]

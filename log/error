@@ -1,0 +1,16 @@
+[2015-05-07 10:22:29,728] ERROR [main] (MonitorAgent.java:53) - hwm.common.monitor.SqlMonitorItem@5917ea[
+  type=SQL
+  service=insert into mailinfo(id,title,content,receiver,cc,type,reqtime,status) values(to_char(sysdate,'yyyymmdd') || substr(trim(to_char(seq_sms.nextval,'000000000000')),6,12),?,?,?,?,?,sysdate,'0')
+  context={{告警: 20150507未知账户申请,未知账户申请流水:,,,html}}
+  consumeMillsec=43
+  error=org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [insert into mailinfo(id,title,content,receiver,cc,type,reqtime,status) values(to_char(sysdate,'yyyymmdd') || substr(trim(to_char(seq_sms.nextval,'000000000000')),6,12),?,?,?,?,?,sysdate,'0')]; nested exception is java.sql.SQLException: ORA-00942: 表或视图不存在
+
+]
+[2015-05-07 10:25:49,920] ERROR [main] (MonitorAgent.java:53) - hwm.common.monitor.SqlMonitorItem@8c7463[
+  type=SQL
+  service=insert into mailinfo(id,title,content,receiver,cc,type,reqtime,status) values(to_char(sysdate,'yyyymmdd') || substr(trim(to_char(seq_sms.nextval,'000000000000')),6,12),?,?,?,?,?,sysdate,'0')
+  context={{告警: 20150507未知账户申请,未知账户申请流水:,,,html}}
+  consumeMillsec=39
+  error=org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [insert into mailinfo(id,title,content,receiver,cc,type,reqtime,status) values(to_char(sysdate,'yyyymmdd') || substr(trim(to_char(seq_sms.nextval,'000000000000')),6,12),?,?,?,?,?,sysdate,'0')]; nested exception is java.sql.SQLException: ORA-00942: 表或视图不存在
+
+]

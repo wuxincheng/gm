@@ -1,0 +1,76 @@
+[2015-05-12 09:28:45,291]  INFO [main] (XmlBeanDefinitionReader.java:315) - Loading XML bean definitions from class path resource [springRoot.xml]
+[2015-05-12 09:28:45,673]  INFO [main] (XmlBeanDefinitionReader.java:315) - Loading XML bean definitions from class path resource [springHis.xml]
+[2015-05-12 09:28:45,692]  INFO [main] (AbstractApplicationContext.java:510) - Refreshing org.springframework.context.support.GenericApplicationContext@17f1ba3: startup date [Tue May 12 09:28:45 CST 2015]; root of context hierarchy
+[2015-05-12 09:28:45,793]  INFO [main] (DefaultListableBeanFactory.java:598) - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c05ffd: defining beans [springContextUtilRoot,sysDict,sysParam,sysConfig,sysSetting,dataSource,jdbcTemplate,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,cacheManagerFactory,cacheManager,cmsService,fundService,publicService,queryService,jdbcTemplateAop,methodPerformanceAop,monitorAgent,transMessage,tuxedoExecutor,tuxedoExecutorHttpStrategy,tuxedoExecutorSocketStrategy,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,hisBatchService,hisConfirmBatchService,hisDao,hisService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[2015-05-12 09:28:46,018]  INFO [main] (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [config.properties]
+[2015-05-12 09:28:46,302]  INFO [main] (EhCacheManagerFactoryBean.java:110) - Initializing EhCache CacheManager
+[2015-05-12 09:28:46,572]  INFO [main] (SysDict.java:79) - 开始初始化数据字典
+[2015-05-12 09:28:46,927]  INFO [main] (SysDict.java:170) - 数据字典初始化完毕
+[2015-05-12 09:28:46,929]  INFO [main] (SysDict.java:58) - 读取系统数据字典并放入缓存 cacheName=lterm cacheKey=HWM_SYSDICT
+[2015-05-12 09:28:46,934]  INFO [main] (SysParam.java:74) - 开始初始化系统参数
+[2015-05-12 09:28:46,992]  INFO [main] (SysParam.java:95) - 系统参数初始化完毕
+[2015-05-12 09:28:46,993]  INFO [main] (SysParam.java:53) - 读取系统参数并放入缓存 cacheName=lterm cacheKey=HWM_SYSPARAM
+[2015-05-12 09:28:47,073]  INFO [main] (TransMessage.java:70) - 开始初始化交易通讯字典
+[2015-05-12 09:28:47,783]  INFO [main] (TransMessage.java:112) - 交易通讯字典初始化完毕
+[2015-05-12 09:28:47,783]  INFO [main] (TransMessage.java:114) - 开始初始化查询通讯字典
+[2015-05-12 09:28:47,940]  INFO [main] (TransMessage.java:164) - 查询通讯字典初始化完毕
+[2015-05-12 09:28:47,940]  INFO [main] (TransMessage.java:58) - 读取通讯格式并放入缓存 cacheName=lterm cacheKey=HWM_TRANSMESSAGE
+[2015-05-12 09:28:48,014]  INFO [main] (HisBatchService.java:66) - 开始启动线程执行队列，线程个数：5
+[2015-05-12 09:28:48,015]  INFO [pool-2-thread-1] (HisBatchService.java:341) - 申请处理线程0启动
+[2015-05-12 09:28:48,016]  INFO [pool-2-thread-2] (HisBatchService.java:341) - 申请处理线程1启动
+[2015-05-12 09:28:48,016]  INFO [pool-2-thread-3] (HisBatchService.java:341) - 申请处理线程2启动
+[2015-05-12 09:28:48,016]  INFO [pool-2-thread-5] (HisBatchService.java:341) - 申请处理线程4启动
+[2015-05-12 09:28:48,016]  INFO [pool-2-thread-4] (HisBatchService.java:341) - 申请处理线程3启动
+[2015-05-12 09:28:48,051]  INFO [main] (HisServiceTest.java:607) - 赎回转购
+[2015-05-12 09:28:48,053]  INFO [main] (HisService.java:1471) - 根据证件号码查询客户信息 certType=0 certNo=230101198504010028
+[2015-05-12 09:28:48,178]  INFO [main] (HisService.java:1483) - 根据客户编号、银行卡号和投顾编号查询交易账号 custNo=1288 bankNo=007 bankAccoNo=6225880139919922 adviserNo=21221202
+[2015-05-12 09:28:48,198]  INFO [main] (HisService.java:1536) - 根据对方流水号，查询交易申请信息 otherSerialNo=111121112
+[2015-05-12 09:28:48,223]  INFO [main] (HisService.java:554) - 调用赎回转购服务
+[2015-05-12 09:28:48,225]  INFO [main] (TuxedoExecutor.java:37) - 调用Tuxedo服务发送数据:HS_TRANSACTION[0528886     007     888600000227                 1b0a472ea9e113f7d14a463737c5c533                  VER330                                  070011A300000000001000000000000000000000                             10000                                                                                  K                               00000                              487021A           ]
+[2015-05-12 09:28:48,700]  INFO [main] (TuxedoExecutor.java:57) - 调用Tuxedo服务返回数据:HS_TRANSACTION[30106基金账号状态是“新开户”，不能做该交易                                                                                                                                        ]
+[2015-05-12 09:28:48,700]  INFO [main] (TuxedoExecutor.java:65) - 调用Tuxedo服务，耗时 475 ms
+[2015-05-12 09:28:48,701] ERROR [main] (HisService.java:563) - 调用赎回转购服务失败
+Tuxedo异常:0106-基金账号状态是“新开户”，不能做该交易
+	at hwm.trans.TransAgent.trans(TransAgent.java:95)
+	at hwm.trans.trade.TradeTrans.redeem(TradeTrans.java:81)
+	at hwm.his.HisService.redeem2buy(HisService.java:555)
+	at hwm.his.HisServiceTest.testRedeem2buy2(HisServiceTest.java:617)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+[2015-05-12 09:28:48,706]  INFO [main] (HisServiceTest.java:620) - 赎回转购失败:0106-基金账号状态是“新开户”，不能做该交易
+[2015-05-12 09:28:48,706]  INFO [main] (HisServiceTest.java:623) - 赎回转购结束
+[2015-05-12 09:28:48,707]  INFO [Thread-4] (AbstractApplicationContext.java:1042) - Closing org.springframework.context.support.GenericApplicationContext@17f1ba3: startup date [Tue May 12 09:28:45 CST 2015]; root of context hierarchy
+[2015-05-12 09:28:48,708]  INFO [Thread-4] (DefaultSingletonBeanRegistry.java:444) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1c05ffd: defining beans [springContextUtilRoot,sysDict,sysParam,sysConfig,sysSetting,dataSource,jdbcTemplate,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,cacheManagerFactory,cacheManager,cmsService,fundService,publicService,queryService,jdbcTemplateAop,methodPerformanceAop,monitorAgent,transMessage,tuxedoExecutor,tuxedoExecutorHttpStrategy,tuxedoExecutorSocketStrategy,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,hisBatchService,hisConfirmBatchService,hisDao,hisService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[2015-05-12 09:28:48,708]  INFO [Thread-4] (HisBatchService.java:76) - 线程执行队列终止
+[2015-05-12 09:28:48,708]  INFO [pool-2-thread-4] (HisBatchService.java:368) - 申请处理线程3退出
+[2015-05-12 09:28:48,708]  INFO [pool-2-thread-5] (HisBatchService.java:368) - 申请处理线程4退出
+[2015-05-12 09:28:48,708]  INFO [Thread-4] (EhCacheManagerFactoryBean.java:164) - Shutting down EhCache CacheManager
+[2015-05-12 09:28:48,708]  INFO [pool-2-thread-1] (HisBatchService.java:368) - 申请处理线程0退出
+[2015-05-12 09:28:48,708]  INFO [pool-2-thread-3] (HisBatchService.java:368) - 申请处理线程2退出
+[2015-05-12 09:28:48,708]  INFO [pool-2-thread-2] (HisBatchService.java:368) - 申请处理线程1退出

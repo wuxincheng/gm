@@ -1,0 +1,14 @@
+[2015-05-05 09:06:15,477]  WARN [main] (MonitorAgent.java:49) - hwm.common.monitor.SqlMonitorItem@1581b9f[
+  type=SQL
+  service=SELECT a.*,b.vc_fieldname,b.c_fieldtype,b.vc_explain FROM TCOMFORMAT a,TCOMDICT b where  b.L_IDNO = a.L_IDNO order by a.vc_servicename,a.c_functionno,a.VC_VERSION,a.C_FLAG,a.L_NO 
+  context={}
+  consumeMillsec=1371
+  error=<null>
+]
+[2015-05-05 09:33:39,233]  WARN [main] (MonitorAgent.java:49) - hwm.common.monitor.SqlMonitorItem@1c4120e[
+  type=SQL
+  service=SELECT a.*,b.vc_fieldname,b.c_fieldtype,b.vc_explain FROM TCOMFORMAT a,TCOMDICT b where  b.L_IDNO = a.L_IDNO order by a.vc_servicename,a.c_functionno,a.VC_VERSION,a.C_FLAG,a.L_NO 
+  context={}
+  consumeMillsec=1267
+  error=<null>
+]

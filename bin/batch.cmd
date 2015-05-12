@@ -1,0 +1,9 @@
+@echo off
+@title=代销直连批处理
+@echo on
+
+SET JAVA_HOME=C:\jdk1.6.0_27
+
+set classpath=.;.\classes;%JAVA_HOME%\jre\lib;%JAVA_HOME%\jre\lib\ext;%JAVA_HOME%\jre\lib\security;.\lib;.\lib\aopalliance-1.0.jar;.\lib\asm-4.0.jar;.\lib\aspectjweaver-1.7.1.jar;.\lib\cglib-3.0.jar;.\lib\commons-beanutils-1.9.1.jar;.\lib\commons-codec-1.8.jar;.\lib\commons-collections-3.2.1.jar;.\lib\commons-httpclient-3.1.jar;.\lib\commons-lang-2.6.jar;.\lib\commons-logging-1.1.3.jar;;.\lib\commons-net-3.3.jar;;.\lib\commons-util-final.jar;;.\lib\commons-vfs-1.0.jar;;.\lib\dom4j-1.6.1.jar;;.\lib\ehcache-2.8.1.jar;.\lib\hibernate-validator-4.2.0.Final.jar;.\lib\jettison-1.1.jar;.\lib\jsch-0.1.50.jar;.\lib\jsr303js-1.0-SNAPSHOT.jar;.\lib\log4j-1.2.16.jar;.\lib\ojdbc14.jar;.\lib\serializer-2.7.1.jar;.\lib\slf4j-api-1.6.1.jar;.\lib\slf4j-log4j12-1.6.1.jar;.\lib\spring-aop-3.2.8.RELEASE.jar;.\lib\spring-batch-core-2.2.6.RELEASE.jar;.\lib\spring-batch-infrastructure-2.2.6.RELEASE.jar;.\lib\spring-beans-3.2.8.RELEASE.jar;.\lib\spring-context-3.2.8.RELEASE.jar;.\lib\spring-context-support-3.2.8.RELEASE.jar;.\lib\spring-core-3.2.8.RELEASE.jar;.\lib\spring-expression-3.2.8.RELEASE.jar;.\lib\spring-jdbc-3.2.8.RELEASE.jar;.\lib\spring-retry-1.0.2.RELEASE.jar;.\lib\spring-test-3.2.8.RELEASE.jar;.\lib\spring-tx-3.2.8.RELEASE.jar;.\lib\spymemcached-2.10.5.jar;.\lib\stax-api-1.0-2.jar;.\lib\stax2-api-3.1.1.jar;.\lib\validation-api-1.0.0.GA.jar;.\lib\woodstox-core-asl-4.1.4.jar;.\lib\xalan-2.7.1.jar;.\lib\xml-apis-1.0.b2.jar;.\lib\xmlpull-1.1.3.1.jar;.\lib\xpp3_min-1.1.4c.jar;.\lib\xstream-1.4.2.jar;.\lib\xmemcached-2.0.0.jar;.\lib\spring-web-3.2.8.RELEASE.jar;.\lib\spring-webmvc-3.2.8.RELEASE.jar;.\lib\servlet-api.jar;.\lib\tomcat-jdbc.jar;.\lib\tomcat-juli.jar;
+
+%JAVA_HOME%\bin\java -Duser.timezone=GMT+8 -Dlog.prefix=batch. -server -Xms52m -Xmx128m hfm.channel.ChannelBatchStartup config/channel/springBatch.xml

@@ -1,0 +1,8 @@
+[2015-04-30 18:26:46,836] ERROR [main] (MonitorAgent.java:53) - hwm.common.monitor.SqlMonitorItem@e410a1[
+  type=SQL
+  service=select t.* from (select * from his_process where processtype=? and batchdate=?) t where rownum<=1
+  context={{A,20150430}}
+  consumeMillsec=298
+  error=org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [select t.* from (select * from his_process where processtype=? and batchdate=?) t where rownum<=1]; nested exception is java.sql.SQLException: ORA-00904: "PROCESSTYPE": 标识符无效
+
+]

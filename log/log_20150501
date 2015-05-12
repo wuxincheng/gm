@@ -1,0 +1,39 @@
+[2015-05-01 22:05:44,270]  INFO [main] (XmlBeanDefinitionReader.java:315) - Loading XML bean definitions from class path resource [springRoot.xml]
+[2015-05-01 22:05:44,695]  INFO [main] (XmlBeanDefinitionReader.java:315) - Loading XML bean definitions from class path resource [springHis.xml]
+[2015-05-01 22:05:44,713]  INFO [main] (AbstractApplicationContext.java:510) - Refreshing org.springframework.context.support.GenericApplicationContext@165b7e: startup date [Fri May 01 22:05:44 CST 2015]; root of context hierarchy
+[2015-05-01 22:05:44,831]  INFO [main] (DefaultListableBeanFactory.java:598) - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ac4d3b: defining beans [springContextUtilRoot,sysDict,sysParam,sysConfig,sysSetting,dataSource,jdbcTemplate,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,cacheManagerFactory,cacheManager,cmsService,fundService,publicService,queryService,jdbcTemplateAop,methodPerformanceAop,monitorAgent,transMessage,tuxedoExecutor,tuxedoExecutorHttpStrategy,tuxedoExecutorSocketStrategy,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,hisBatchService,hisDao,hisService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[2015-05-01 22:05:45,082]  INFO [main] (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [config.properties]
+[2015-05-01 22:05:45,394]  INFO [main] (EhCacheManagerFactoryBean.java:110) - Initializing EhCache CacheManager
+[2015-05-01 22:05:45,690]  INFO [main] (SysDict.java:79) - 开始初始化数据字典
+[2015-05-01 22:05:46,186]  INFO [main] (SysDict.java:170) - 数据字典初始化完毕
+[2015-05-01 22:05:46,189]  INFO [main] (SysDict.java:58) - 读取系统数据字典并放入缓存 cacheName=lterm cacheKey=HWM_SYSDICT
+[2015-05-01 22:05:46,194]  INFO [main] (SysParam.java:74) - 开始初始化系统参数
+[2015-05-01 22:05:46,241]  INFO [main] (SysParam.java:95) - 系统参数初始化完毕
+[2015-05-01 22:05:46,242]  INFO [main] (SysParam.java:53) - 读取系统参数并放入缓存 cacheName=lterm cacheKey=HWM_SYSPARAM
+[2015-05-01 22:05:46,331]  INFO [main] (TransMessage.java:70) - 开始初始化交易通讯字典
+[2015-05-01 22:05:46,992]  INFO [main] (TransMessage.java:112) - 交易通讯字典初始化完毕
+[2015-05-01 22:05:46,992]  INFO [main] (TransMessage.java:114) - 开始初始化查询通讯字典
+[2015-05-01 22:05:47,234]  INFO [main] (TransMessage.java:164) - 查询通讯字典初始化完毕
+[2015-05-01 22:05:47,235]  INFO [main] (TransMessage.java:58) - 读取通讯格式并放入缓存 cacheName=lterm cacheKey=HWM_TRANSMESSAGE
+[2015-05-01 22:05:47,290]  INFO [main] (HisBatchService.java:60) - 开始启动线程执行队列，线程个数：5
+[2015-05-01 22:05:47,291]  INFO [pool-2-thread-1] (HisBatchService.java:350) - 申请处理线程0启动
+[2015-05-01 22:05:47,292]  INFO [pool-2-thread-5] (HisBatchService.java:350) - 申请处理线程4启动
+[2015-05-01 22:05:47,319]  INFO [pool-2-thread-2] (HisBatchService.java:350) - 申请处理线程1启动
+[2015-05-01 22:05:47,322]  INFO [pool-2-thread-4] (HisBatchService.java:350) - 申请处理线程3启动
+[2015-05-01 22:05:47,322]  INFO [pool-2-thread-3] (HisBatchService.java:350) - 申请处理线程2启动
+[2015-05-01 22:05:47,343]  INFO [main] (HisBatchService.java:75) - 开始处理账户类申请 batchDate=20150430
+[2015-05-01 22:05:47,384]  INFO [main] (HisBatchService.java:329) - 处理失败：没有查询到这个类任务
+[2015-05-01 22:05:47,384]  INFO [main] (HisBatchService.java:95) - 开始处理交易类申请 batchDate=20150430
+[2015-05-01 22:05:47,386]  INFO [main] (HisBatchService.java:329) - 处理失败：没有查询到这个类任务
+[2015-05-01 22:05:47,387]  INFO [main] (HisBatchService.java:114) - 开始判断是否存在未决交易
+[2015-05-01 22:05:47,387]  INFO [main] (HisBatchService.java:116) - 开始处理交易类确认 batchDate=20150430
+[2015-05-01 22:05:47,390]  INFO [main] (HisBatchService.java:329) - 处理失败：没有查询到这个类任务
+[2015-05-01 22:05:47,392]  INFO [Thread-4] (AbstractApplicationContext.java:1042) - Closing org.springframework.context.support.GenericApplicationContext@165b7e: startup date [Fri May 01 22:05:44 CST 2015]; root of context hierarchy
+[2015-05-01 22:05:47,393]  INFO [Thread-4] (DefaultSingletonBeanRegistry.java:444) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ac4d3b: defining beans [springContextUtilRoot,sysDict,sysParam,sysConfig,sysSetting,dataSource,jdbcTemplate,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,cacheManagerFactory,cacheManager,cmsService,fundService,publicService,queryService,jdbcTemplateAop,methodPerformanceAop,monitorAgent,transMessage,tuxedoExecutor,tuxedoExecutorHttpStrategy,tuxedoExecutorSocketStrategy,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,hisBatchService,hisDao,hisService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[2015-05-01 22:05:47,393]  INFO [pool-2-thread-3] (HisBatchService.java:377) - 申请处理线程2退出
+[2015-05-01 22:05:47,393]  INFO [pool-2-thread-1] (HisBatchService.java:377) - 申请处理线程0退出
+[2015-05-01 22:05:47,393]  INFO [pool-2-thread-2] (HisBatchService.java:377) - 申请处理线程1退出
+[2015-05-01 22:05:47,393]  INFO [pool-2-thread-5] (HisBatchService.java:377) - 申请处理线程4退出
+[2015-05-01 22:05:47,393]  INFO [Thread-4] (HisBatchService.java:70) - 线程执行队列终止
+[2015-05-01 22:05:47,393]  INFO [pool-2-thread-4] (HisBatchService.java:377) - 申请处理线程3退出
+[2015-05-01 22:05:47,395]  INFO [Thread-4] (EhCacheManagerFactoryBean.java:164) - Shutting down EhCache CacheManager

@@ -1,0 +1,4 @@
+mvn dependency:copy-dependencies -DoutputDirectory=target\lib
+
+mvn install -Dmaven.test.skip=true
+mvn dependency:sources 
